@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CIS2169 - Web Application Development</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">CW2 - Web App Dev</div>
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="fetchmodules.html" class="list-group-item list-group-item-action bg-light">Fetch Modules</a>
+        <a href="degreeprogrammes.html" class="list-group-item list-group-item-action bg-light">Degree Programmes</a>
+        <a href="modules.html" class="list-group-item list-group-item-action bg-light">Modules</a>
+        <a href="assessments.html" class="list-group-item list-group-item-action bg-light">Assessments</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">ASSESSMENTS</h1>
+        <header>
+          <button id ="btn" class="btn - btn-primary">Fetch information about the modules</button>
+        </header>
+        <br></br>
+        <button onclick="window.location.href='createassessment.html'" class="btn btn-primary" id="menu-toggle">Create Assessment</button>
+        <div id="module-info"></div>
+      </div><br>
+<!-- Tree View -->
+<ul id="myUL">
+      <li><span class="caret">Assessment 1</span>
+        <ul class="nested">
+          <li>Learning Outcomes: LO1 LO2</li>
+          <li>Volume: 2000 Words</li>
+          <li>Weight: 20%</li>
+        </ul>
+      </li>
+      <li><span class="caret">Assessment 2</span>
+        <ul class="nested">
+          <li>Learning Outcomes: LO1 LO2</li>
+          <li>Volume: 2000 Words</li>
+          <li>Weight: 20%</li>
+        </ul>
+      </li>
+      <li><span class="caret">Assessment 3</span>
+        <ul class="nested">
+          <li>Learning Outcomes: LO1 LO2</li>
+          <li>Volume: 2000 Words</li>
+          <li>Weight: 20%</li>
+        </ul>
+      </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+      <li><span class="caret">Assessment 4</span>
+        <ul class="nested">
+          <li>Learning Outcomes: LO1 LO2</li>
+          <li>Volume: 2000 Words</li>
+          <li>Weight: 20%</li>
+        </ul>
+      </li>
+      <li><span class="caret">Assessment 5</span>
+        <ul class="nested">
+          <li>Learning Outcomes: LO1 LO2</li>
+          <li>Volume: 2000 Words</li>
+          <li>Weight: 20%</li>
+        </ul>
+      </li>
+      <li><span class="caret">Assessment 6</span>
+        <ul class="nested">
+          <li>Learning Outcomes: LO1 LO2</li>
+          <li>Volume: 2000 Words</li>
+          <li>Weight: 20%</li>
+        </ul>
+      </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+          <li><span class="caret">Assessment 7</span>
+            <ul class="nested">
+              <li>Learning Outcomes: LO1 LO2</li>
+              <li>Volume: 2000 Words</li>
+              <li>Weight: 20%</li>
+            </ul>
+          </li>
+          <li><span class="caret">Assessment 8</span>
+            <ul class="nested">
+              <li>Learning Outcomes: LO1 LO2</li>
+              <li>Volume: 2000 Words</li>
+              <li>Weight: 20%</li>
+            </ul>
+          </li>
+          <li><span class="caret">Assessment 9</span>
+            <ul class="nested">
+              <li>Learning Outcomes: LO1 LO2</li>
+              <li>Volume: 2000 Words</li>
+              <li>Weight: 20%</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+      </li>
+    </ul>
+  </li>
+</ul> 
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
